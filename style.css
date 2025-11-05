@@ -134,3 +134,14 @@ footer {
   font-size: 14px;
   color: #aaa;
 }
+
+/*Mobil ekranlar için */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
