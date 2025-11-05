@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamze Duran</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(11, 14, 25, 0.8);
+            backdrop-filter: blur(6px);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a hower {
+            color: #00bfff;
+        }
+
+        .container {
+            margin-top: 80px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        button.send {
+            background: #00bfff;
+            color: #fff;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button.send:hover {
+            background: #0099cc;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="background"></canvas>
+
+    <!--Üst Navigasyon-->
+    <nav>
+        <a href="#about">Hakkımda</a>
+        <a href="#education">Eğitim</a>
+        <a href="#internships">Stajlar</a>
+        <a href="#skills">Beceriler</a>
+        <a href="#certificates">Sertifikalar</a>
+        <a href="#projects">Projeler</a>
+        <a href="#languages">Diller</a>
+        <a href="#references">Referanslar</a>
+        <a href="#contact">İletişim</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1 class="glow">Gamze Duran</h1>
+            <p class="subtitle">Bilgisayar Mühendisi</p>
+        </header>
+
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Gamze Duran" class="photo" />
+            <div class="links">
+                <a href="https://github.com/gamzedrn" target="_blank" class="icon github">GitHub</a>
+                <a href="https://www.linkedin.com/in/gamze-d-420944270/" target="_blank"
+                    class="icon linkedin">LinkedIn</a>
+            </div>
+        </div>
+
+        <section id="about">
+            <h2>Hakkımda</h2>
+            <p>Yazılım geliştirme alanında öğrenmeye açık ve teknolojiyi yaratıcı biçimde kullanmayı seven
+                bir bilgisayar mühendisiyim. Yapay zekâ, front-end ve modern web teknolojileriyle ilgileniyorum.</p>
+        </section>
+
+        <section id="education">
+            <h2>Eğitim</h2>
+            <p><strong>Düzce Üniversitesi</strong>-Bilgisayar Mühendisi(2024-2025)</p>
+            <p><strong>Karabük Üniversitesi</strong>-Bilgisayar Mühendisi(2020-2024)</p>
+            <p><strong>Sancaktepe Final temel Lisesi</strong>(2017-2019)</p>
+            <p><strong>Ataşehir Mustafa Kemal Anadolu Lisesi</strong>(2015-2017)</p>
+        </section>
+
+        <section id="internships">
+            <h2>Stajlar</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>💼 Karadeniz Holding</h3>
+                    <p>IT destek süreçlerinde görev aldım, bilgisayar ve telefon bakım/formatlama işlemleri yaptım.
+                        Domain yönetimi ve temel ağ yapılandırmaları üzerine deneyim kazandım.</p>
+                </div>
+                <div class="card">
+                    <h3>💡 Yıldız Teknik Üniversitesi</h3>
+                    <p>Web tabanlı dil öğrenme projesinde görev aldım. Python, SQLAlchemy, Streamlit, Docker ve Keycloak
+                        kullanarak
+                        yapay zekâ destekli sistemler üzerinde çalıştım.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Beceriler</h2>
+            <div class="cards">
+                <div class="card">🐍 Python</div>
+                <div class="card">💻 C#</div>
+                <div class="card">>🌐 HTML / CSS / JS</div>
+                <div class="card">🗄️ SQL</div>
+                <div class="card">🤖 Yapay Zeka & ML</div>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Sertifikalar</h2>
+            <ul>
+                <li>LC Waikiki Akademi – Teknoloji ve Dijitalleşmeye Giriş (Mart–Mayıs 2024)</li>
+                <li>Akbank Gençlik Akademisi – Makine Öğrenmesi 101 (Nisan 2024)</li>
+                <li>Oracle Academy – Database Design & SQL (Ağustos 2023)</li>
+                <li>TNC Group – Bilgi Teknolojileri Staj Katılım Sertifikası (Temmuz–Ağustos 2025)</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projeler</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>💡 TTS ile İngilizce Okuma Becerisi</h3>
+                    <p>React.js, Flask, gTTS ve Web Speech API kullanarak yapay zekâ destekli öğrenme projesi.</p>
+                </div>
+                <div class="card">
+                    <h3>🧠 Yapay Zeka Destekli CAPTCHA</h3>
+                    <p>Makine öğrenmesiyle güvenliği artıran, otomatik bot erişimlerini engelleyen sistem.</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 Portföy Sitesi</h3>
+                    <p>HTML, CSS ve JavaScript ile kişisel portföy sayfam – bu site!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="languages">
+            <h2>Diller</h2>
+            <p>İngilizce - Orta Seviye</p>
+            <p>Türkçe - Ana Dili</p>
+        </section>
+
+        <section id="references">
+            <h2>Referanslar</h2>
+            <ul>
+                <li>Ali Çetkin — Karadeniz Holding | 0536 523 7160</li>
+                <li>Dr. Öğr. Üyesi Oğuz Altun — Yıldız Teknik Üniversitesi | 0506 844 9618</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>İletişim</h2>
+            <p>Benimle iletişime geçmek istersen aşağıdaki formu doldurabilirsin 👇</p>
+            <form action="https://formspree.io/f/xqagraev" method="POST">
+                <input type="text" name="name" placeholder="Ad Soyad" required />
+                <input type="email" name="email" placeholder="E-posta adresi" required />
+                <textarea name="message" rows="5" placeholder="Mesajın..." required></textarea>
+                <button type="submit" class="send">Gönder</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2025 Gamze Duran | Made with ❤️ & Code</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function sendMail(event) {
+            event.preventDefault();
+            alert("Teşekkürler! Mesajın gönderildi ✅");
+            document.querySelector("form").reset();
+        }
+    </script>
+</body>
+
+</html>
