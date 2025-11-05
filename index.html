@@ -11,6 +11,29 @@
             scroll-behavior: smooth;
         }
 
+        @media (max-width: 768px) {
+            nav {
+                gap: 10px; /* Menüdeki boşlukları biraz daraltır */
+                padding: 10px;
+            }
+
+            nav a {
+                font-size: 14px; /* Yazı boyutunu küçültür */
+            }
+        }
+
+      @media (max-width: 480px) {
+          nav {
+              gap: 6px;
+              padding: 8px;
+          }
+
+         nav a {
+             font-size: 12px; /* Daha küçük ekranlarda daha da küçülür */
+         }
+       }
+
+
         nav {
             position: fixed;
             top: 0;
@@ -25,16 +48,13 @@
         }
 
         nav a {
-            display: block; /* Her bağlantı kendi satırında olur */
-            padding: 8px 0;
-            font-size: 16px;
             color: #fff;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
         }
 
-        nav a hower {
+        nav a:hover {
             color: #00bfff;
         }
 
@@ -219,6 +239,7 @@
 
 
 </html>
+
 
 
 
