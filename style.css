@@ -51,8 +51,8 @@ header {
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 32px;
+  font-weight: 310;
+  font-size: 33px;
   color: #bbb;
 }
 
@@ -136,6 +136,7 @@ footer {
   font-size: 14px;
   color: #aaa;
 }
+
 
 
 
